@@ -1,3 +1,4 @@
+/*d a m*/
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +43,26 @@ body{
     cursor: pointer;
     transition: 0.3s ease-in-out;
 
+}
+.head-icon{
+    position: relative;
+    top: 1px;
+    margin-right: 4px;
+}
+.header-icon{
+    position: relative;
+    top: 6px;
+
+}
+.button-icon{
+    position: relative;
+    top: 2px;
+    
+}
+.footer-icon{
+    position: relative;
+    top: 2.7px;
+    margin-right: 3px;
 }
 .logo {
     font-size: 2rem;
@@ -236,15 +257,19 @@ section{
 .about-content h2{
     font-size: 5rem;
     text-align: left;
+    margin-bottom:2rem;
 }
 .about-content p{
     font-size: 1.5rem;
     line-height: 1.7;
+    padding-left: 0.5rem;
+    margin-bottom:0.4rem;
 
 }
 .about-content .btn{
     margin: 2rem 0;
     transition: 0.4s ease-in-out;
+    
 }
 .about-content .btn:hover{
         box-shadow: 0 0 25px var(--main-color),
@@ -267,7 +292,6 @@ section{
     font-size: 5rem;
     margin: 5rem 0;
 }
-
 
 
 /*
@@ -431,7 +455,7 @@ section{
 
 
 
-
+/*d a m*/
 /*
 .contact{
     background-color: var(--bg-color);
@@ -533,6 +557,7 @@ section{
         border-bottom: 2px solid var(--main-color);
         */
         display: none;
+    /*d a m*/
     }
     .navbar a{
         display: block;
@@ -562,7 +587,7 @@ section{
         max-width: 300px;
     }
     .about{
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
     }
     .about h2{
@@ -576,6 +601,32 @@ section{
     }
     .contact form{
         flex-direction: column;
+    }
+    .projects-box,
+    .certificate-box{
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    .project-card,
+    .certificate-card{
+        width: 75%;
+        padding: 3rem 1.5rem;
+    }
+
+    .project-card img,
+    .certificate-card img{
+        max-width: 375px;
+    }
+
+    .project-card h3,
+    .certificate-card h3{
+        font-size: 1.7rem;
+    }
+
+    .project-card p,
+    .certificate-card p{
+        font-size: 1.4rem;
     }
 }
 

@@ -29,12 +29,6 @@ Website ini berisi project, sertifikat, dan sedikit tentang perjalanan saya didu
 
 ---
 
-## Preview Website
-
-![Preview](img/preview.png)
-
----
-
 ## Dibuat Menggunakan
 - HTML5
 - CSS3
