@@ -1,7 +1,7 @@
 <h1 align="center">Personal Portfolio Website</h1>
 
 <p align="center">
-Website portofolio pribadi yang dibuat menggunakan HTML, CSS, dan JavaScript.
+Website portofolio pribadi dibuat menggunakan HTML, CSS, dan JavaScript.
 </p>
 
 <p align="center">
