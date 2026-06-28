@@ -25,7 +25,7 @@ Website ini berisi project, sertifikat, dan sedikit tentang perjalanan saya didu
 ---
 
 ## Live Website
-👉 https://yannlloyds.github.io/portofolio/
+👉 https://yannlloyds.github.io
 
 ---
 
