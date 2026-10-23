@@ -652,6 +652,12 @@ section {
     margin-inline: calc(-1 * max(5%, calc((100% - var(--content-width)) / 2)));
     touch-action: pan-y;
     user-select: none;
+    cursor: grab;
+}
+
+.certificate-marquee.is-dragging,
+.project-marquee.is-dragging {
+    cursor: grabbing;
 }
 
 .certificate-marquee::before,
@@ -996,16 +1002,29 @@ section {
     }
 
     .logo {
-        max-width: 19rem;
+        min-width: 0;
+        max-width: none;
+        flex: 1 1 auto;
+        overflow: hidden;
         font-size: 1.4rem;
+        white-space: nowrap;
     }
 
     .header > .gradient-btn {
-        display: none;
+        min-height: 3.6rem;
+        flex: 0 0 auto;
+        margin-left: auto;
+        padding: 0.6rem 0.9rem;
+        font-size: 1.1rem;
+    }
+
+    .language-toggle {
+        margin-left: 0;
     }
 
     .menu-toggle {
-        margin-left: auto;
+        flex: 0 0 4.4rem;
+        margin-left: 0;
     }
 
     .btn-group {

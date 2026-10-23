@@ -246,6 +246,8 @@ const initializeMarquee = ({ marqueeSelector, trackSelector, setSelector, direct
     let frameId = 0;
     let isInViewport = false;
     let isPageVisible = !document.hidden;
+    let activePointerId = null;
+    let lastPointerX = 0;
 
     const wrapPosition = (value) => ((value % cycleWidth) + cycleWidth) % cycleWidth;
     const scheduleFrame = () => {
@@ -278,7 +280,7 @@ const initializeMarquee = ({ marqueeSelector, trackSelector, setSelector, direct
         const deltaTime = lastFrame ? Math.min((time - lastFrame) / 1000, 0.05) : 0;
         lastFrame = time;
 
-        if (!prefersReducedMotion) {
+        if (!prefersReducedMotion && activePointerId === null) {
             targetPosition = wrapPosition(targetPosition + direction * 24 * deltaTime);
         }
 
@@ -309,6 +311,41 @@ const initializeMarquee = ({ marqueeSelector, trackSelector, setSelector, direct
         targetPosition = wrapPosition(targetPosition + horizontalDelta);
         scheduleFrame();
     }, { passive: false });
+
+    marquee.addEventListener("pointerdown", (event) => {
+        if (!event.isPrimary || event.button !== 0 || event.target.closest("a, button")) return;
+
+        activePointerId = event.pointerId;
+        lastPointerX = event.clientX;
+        marquee.classList.add("is-dragging");
+        marquee.setPointerCapture(event.pointerId);
+    });
+
+    marquee.addEventListener("pointermove", (event) => {
+        if (event.pointerId !== activePointerId) return;
+
+        const deltaX = event.clientX - lastPointerX;
+        lastPointerX = event.clientX;
+        targetPosition = wrapPosition(targetPosition - deltaX);
+        position = targetPosition;
+        track.style.transform = `translate3d(${-position}px, 0, 0)`;
+        lastFrame = 0;
+        scheduleFrame();
+    });
+
+    const stopDragging = (event) => {
+        if (event.pointerId !== activePointerId) return;
+
+        activePointerId = null;
+        marquee.classList.remove("is-dragging");
+        if (marquee.hasPointerCapture(event.pointerId)) {
+            marquee.releasePointerCapture(event.pointerId);
+        }
+        scheduleFrame();
+    };
+
+    marquee.addEventListener("pointerup", stopDragging);
+    marquee.addEventListener("pointercancel", stopDragging);
 
     new ResizeObserver(measureCycle).observe(set);
     new IntersectionObserver(([entry]) => {
