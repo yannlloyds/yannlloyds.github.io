@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 <h1 align="center">Portfolio Website</h1>
+=======
+<h1 align="center">Personal Portfolio Website</h1>
+
+<p align="center">
+Website portofolio pribadi dibuat menggunakan HTML, CSS, dan JavaScript.
+</p>
+>>>>>>> bfd4cee8481105783a12ce8504da1a6ae5485819
 
 <p align="center">
   <a href="https://yannlloyds.github.io/portofolio/">
@@ -20,6 +28,12 @@
 
 ## Technologies
 
+## Live Website
+👉 https://yannlloyds.github.io
+
+---
+
+## Dibuat Menggunakan
 - HTML5
 - CSS3
 - JavaScript
@@ -52,3 +66,15 @@
 - X: [@Adrian_420m](https://x.com/Adrian_420m)
 
 ---
+
+## Contact
+- Email : dhasyadrianm@gmail.com
+- Instagram : @dhasyadrian
+- LinkedIn : dhasyadrianm
+- GitHub : yannlloyds
+
+---
+
+<p align="center">
+Thanks for visiting my repository
+</p>
