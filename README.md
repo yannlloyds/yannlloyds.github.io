@@ -6,7 +6,7 @@ Website portofolio pribadi dibuat menggunakan HTML, CSS, dan JavaScript.
 </p>
 
 <p align="center">
-  <a href="https://yannlloyds.github.io/portofolio/">
+  <a href="https://yannlloyds.github.io/">
     <img src="https://img.shields.io/badge/Live-Demo-05ebfc?style=for-the-badge" alt="Live Demo">
   </a>
   <img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
@@ -26,7 +26,7 @@ Website portofolio pribadi dibuat menggunakan HTML, CSS, dan JavaScript.
 ## Technologies
 
 ## Live Website
-👉 https://yannlloyds.github.io
+https://yannlloyds.github.io/
 
 ---
 
@@ -55,7 +55,7 @@ Website portofolio pribadi dibuat menggunakan HTML, CSS, dan JavaScript.
 
 ## Links
 
-- Portfolio: [yannlloyds.github.io/portofolio](https://yannlloyds.github.io/portofolio/)
+- Portfolio: [yannlloyds.github.io/portofolio](https://yannlloyds.github.io/)
 - Email: [dhasyadrianm@gmail.com](mailto:dhasyadrianm@gmail.com)
 - GitHub: [yannlloyds](https://github.com/yannlloyds)
 - LinkedIn: [dhasyadrianm](https://www.linkedin.com/in/dhasyadrianm)
