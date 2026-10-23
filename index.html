@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Personal portfolio of Dhasya Adrian Maulana, a computer science student interested in networks, IoT, and frontend development.">
+    <meta name="theme-color" content="#080b12">
+    <title>Dhasya Adrian Maulana | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://unpkg.com">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
@@ -15,54 +18,61 @@
             Dhasya<span>Adrian Maulana</span>
         </a>
 
-        <i class="bx bx-menu-alt-right" id="menu-icon"></i>
-        <nav class="navbar">
+        <button class="menu-toggle" id="menu-icon" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <i class="bx bx-menu-alt-right" aria-hidden="true"></i>
+        </button>
+        <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
             <a href="#home"><i class="bx bx-home head-icon"></i> Home</a>
             <a href="#about"><i class="bx bx-user head-icon"></i> About</a>
-            <!--<a href="#services">Services</a>-->
             <a href="#projects"><i class="bx bx-code-alt head-icon"></i> Projects</a>
             <a href="#certificate"><i class="bx bx-medal head-icon"></i> Certificate</a>
         </nav>
         
-        <a href="mailto: dhasyadrianm@gmail.com" target="_blank" class="gradient-btn">Contact Me</a>
+        <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to Indonesian" aria-pressed="false">
+            <span class="visually-hidden">Switch language</span>
+            <span class="language-toggle__label" aria-hidden="true">EN</span>
+        </button>
+        <a href="mailto:dhasyadrianm@gmail.com" class="gradient-btn">Contact Me</a>
     </header>
 
+    <main>
 <!--HOME-->
 
     <section class="home" id="home">
         <div class="home-content">
+            <p class="eyebrow">Computer Science Student</p>
             <h1>Hi, It's <span>Adrian</span></h1>
             <h3>
                 Welcome to<span>My Portofolio Website</span>
             </h3>
-            <p>Computer Science Student | Coumputer Networks | Frontend Web Development</p>
+            <p>Computer Science Student | Networking & Web Development Enthusiast</p>
 
-            <div class="social-icons">
-                <a href="https://github.com/yannlloyds">
-                    <i class="bx bxl-github"></i>
+            <div class="social-icons" aria-label="Social profiles">
+                <a href="https://github.com/yannlloyds" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-github" aria-hidden="true"></i>
                 </a>
 
-                 <a href="https://www.linkedin.com/in/dhasyadrianm">
-                    <i class="bx bxl-linkedin-square"></i>
+                 <a href="https://www.linkedin.com/in/dhasyadrianm" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-linkedin-square" aria-hidden="true"></i>
                 </a>
 
-                 <a href="https://www.instagram.com/dhasyadrian?igsh=bjgwb2NmNDVqdXdo">
-                    <i class="bx bxl-instagram-alt"></i>
+                 <a href="https://www.instagram.com/dhasyadrian?igsh=bjgwb2NmNDVqdXdo" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-instagram-alt" aria-hidden="true"></i>
                 </a>
 
-                 <a href="https://x.com/Adrian_420m">
-                    <i class="bx bxl-twitter"></i>
+                 <a href="https://x.com/Adrian_420m" aria-label="X" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-twitter" aria-hidden="true"></i>
                 </a>
             </div>
 
             <div class="btn-group">
-                <a href="mailto: dhasyadrianm@gmail.com" target="_blank" class="btn">Send an Email <i class="bx bx-envelope button-icon"></i></a>
-                <a href="assets/mycv.pdf" target="_blank" class="btn">View CV <i class="bx bx-link-external button-icon"></i></a>
+                <a href="mailto:dhasyadrianm@gmail.com" class="btn">Send an Email <i class="bx bx-envelope button-icon" aria-hidden="true"></i></a>
+                <a href="assets/documents/mycv.pdf" target="_blank" rel="noopener noreferrer" class="btn">View CV <i class="bx bx-link-external button-icon" aria-hidden="true"></i></a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="assets/img/Profile pic.jpeg" alt="" loading="lazy">
+            <img src="assets/images/pfp2.jpeg" alt="Portrait of Dhasya Adrian Maulana" fetchpriority="high">
         </div>
 
     </section>
@@ -72,110 +82,66 @@
     <section class="about" id="about">
 
         <div class="about-img">
-            <img src="assets/img/pfp2.jpeg" alt="" loading="lazy">
+            <img src="assets/images/Profile pic.jpg" alt="Dhasya Adrian Maulana" loading="lazy">
         </div>
 
         <div class="about-content">
             <h2><i class="bx bx-user header-icon"></i> About <span>Me</span></h2>
             <p>My journey in the digital world began during vocational high school as a self taught learner. Over time, I have developed skills in coding, computer networking, Internet of Things (IoT), and interface design through various projects and hands-on experience.</p>
             <p>I am capable of developing simple systems, creating design prototypes, and implementing IoT solutions. By combining technical skills with creativity, I focus on building solutions that are effective, efficient, and user-friendly.</p>
-            <a href="assets/mycv.pdf" target="_blank" class="btn">Read More <i class="bx bx-link-external button-icon"></i></a>
+            <a href="assets/documents/mycv.pdf" target="_blank" rel="noopener noreferrer" class="btn">Read More <i class="bx bx-link-external button-icon" aria-hidden="true"></i></a>
         </div>
     </section>
 <!--END ABOUT-->
-
-<!--SERVICES-->
-<!--
-    <section class="services" id="services">
-
-        <h2 class="heading">services</h2>
-        
-
-        <div class="services-container">
-            <div class="services-box">
-                <div class="services-info">
-                    <i class="bx bxl-figma"></i>
-                    <h4>UI / UX DESIGN</h4>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti iusto facilis voluptates sed? Rem unde tempora at, quasi harum itaque vitae doloribus inventore dolores maiores dolorum, iste, nisi officia!</P>
-                </div>
-            </div>
-            
-             <div class="services-box">
-                <div class="services-info">
-                    <i class="bx bx-code"></i>
-                    <h4>Frontend Development</h4>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti iusto facilis voluptates sed? Rem unde tempora at, quasi harum itaque vitae doloribus inventore dolores maiores dolorum, iste, nisi officia!</P>
-                </div>
-            </div>
-
-            <div class="services-box">
-                <div class="services-info">
-                    <i class="bx bx-code-curly"></i>
-                    <h4>Backend Development</h4>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti iusto facilis voluptates sed? Rem unde tempora at, quasi harum itaque vitae doloribus inventore dolores maiores dolorum, iste, nisi officia!</P>
-                </div>
-            </div>
-        </div>
-    </section>
--->
-<!--END SERVICES-->
 
 <!--PROJECTS-->
     <section class="projects" id="projects">
 
         <h2 class="heading"><i class="bx bx-code-alt header-icon"></i> Projects</h2>
 
-        <div class="projects-box">
+        <div class="project-marquee" role="region" aria-label="Project gallery">
+            <button class="project-nav certificate-nav certificate-nav--previous" type="button" aria-label="Previous projects">
+                <i class="bx bx-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="project-track">
+                <div class="projects-box">
 
             <div class="project-card">
-                <img src="assets/img/thumbnail_project1.jpg" alt="" loading="lazy">
+                <img src="assets/images/thumbnail_project1.jpg" alt="Preview of the Warung Nusantara food ordering website" loading="lazy">
 
                 <h3>Warung Nusantara</h3>
                 <p>A simple food ordering website that allows users to browse menus and place orders easily.</p>
-                <div class="btn">View Project <i class="bx bx-link-external button-icon"></i></div>
+                <span class="project-label"><i class="bx bx-globe" aria-hidden="true"></i> Web development</span>
             </div>
 
             <div class="project-card">
-                <img src="assets/img/project2.jpeg" alt="" loading="lazy">
+                <img src="assets/images/project2.jpeg" alt="Huna MRT microcontroller project with sensors and servo motor" loading="lazy">
 
-                <h3>Project 2</h3>
+                <h3>Microcontroller</h3>
                 <p>Creating a simple project using the Huna MRT microcontroller based kit, incorporating a servo motor, sensors, and an automatic control system.</p>
-                <div class="btn">View Project <i class="bx bx-link-external button-icon"></i></div>
+                <span class="project-label"><i class="bx bx-chip" aria-hidden="true"></i> IoT &amp; hardware</span>
             </div>
 
             <div class="project-card">
-                <img src="assets/img/in_progress.png" alt="" loading="lazy">
+                <img src="assets/images/thumbnail_project3.jpg" alt="Preview of the Targaz mobile app prototype" loading="lazy">
 
-                <h3>Project 3</h3>
-                <p>Ongoing Project...</p>
-                <div class="btn">View Project <i class="bx bx-link-external button-icon"></i></div>
-            </div>
-            <!--d a m-->
-            <!--<div class="project-card">
-                <img src=".png" alt="">
-
-                <h3>Project 4</h3>
-                <p>On Going....</p>
-                <div class="btn">Review project</div>
+                <h3>Targaz Mobile App</h3>
+                <p>Create a prototype project of Targaz Mobile APP using figma to view course schedules and task lists</p>
+                <span class="project-label"><i class="bx bx-mobile-alt" aria-hidden="true"></i> UI prototype</span>
             </div>
 
             <div class="project-card">
-                <img src=".png" alt="">
+                <img src="assets/images/thumbnail_project4.png" alt="Preview of the library information system web application" loading="lazy">
 
-                <h3>Project 5</h3>
-                <p>On Going...</p>
-                <div class="btn">Review project</div>
+                <h3>Library Information System</h3>
+                <p>A web application for managing library books, members, loans, and reports.</p>
+                <span class="project-label"><i class="bx bx-globe" aria-hidden="true"></i> Web development</span>
             </div>
-
-            <div class="project-card">
-                <img src=".png" alt="">
-
-                <h3>Project 6</h3>
-                <p>On Going...</p>
-                <div class="btn">Review project</div>
-            </div>-->
-
-
+                </div>
+            </div>
+            <button class="project-nav certificate-nav certificate-nav--next" type="button" aria-label="Next projects">
+                <i class="bx bx-chevron-right" aria-hidden="true"></i>
+            </button>
         </div>
     </section>
 
@@ -184,117 +150,77 @@
 
         <h2 class="heading"><i class="bx bx-medal header-icon"></i> My <span>Certificate</span></h2>
 
-        <div class="certificate-box">
+        <div class="certificate-marquee" role="region" aria-label="Certificate gallery">
+            <button class="certificate-nav certificate-nav--previous" type="button" aria-label="Previous certificates">
+                <i class="bx bx-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="certificate-track">
+                <div class="certificate-box">
+                    <div class="certificate-card">
+                        <img src="assets/images/sertifikat1.png" alt="Kominfo Digital Literacy certificate" loading="lazy">
+                        <h3>Certificate of Digital Literacy by Kominfo</h3>
+                        <p>Participated in the Digital Literacy Program by Kominfo, covering topics such as digital skills, cybersecurity awareness, and responsible use of technology.</p>
+                        <a href="assets/certificates/sertifikat-kominfo-10-10-2022.pdf" target="_blank" rel="noopener noreferrer" class="btn">View Certificate <i class="bx bx-link-external button-icon" aria-hidden="true"></i></a>
+                    </div>
 
-            <div class="certificate-card">
-                <img src="assets/img/sertifikat1.png" alt="" loading="lazy">
+                    <div class="certificate-card">
+                        <img src="assets/images/sertifikat2.png" alt="Kominfo and Microsoft AI and Digital Literacy webinar certificate" loading="lazy">
+                        <h3>AI & Digital Literacy Webinar - Kominfo x Microsoft</h3>
+                        <p>Participated in a digital literacy webinar discussing the impact of AI on digital talent, organized by Kominfo in collaboration with Microsoft.</p>
+                        <a href="assets/certificates/sertifikat_kominfo.pdf" target="_blank" rel="noopener noreferrer" class="btn">View Certificate <i class="bx bx-link-external button-icon" aria-hidden="true"></i></a>
+                    </div>
 
-                <h3>Certificate of Digital Literacy by Kominfo</h3>
-                <p>Participated in the Digital Literacy Program by Kominfo, covering topics such as digital skills, cybersecurity awareness, and responsible use of technology.</p>
-                
-                <a href="assets/sertifikat/sertifikat-kominfo-10-10-2022.pdf" target="_blank" class="btn">View Certificate <i class="bx bx-link-external button-icon"></i></a>
+                    <div class="certificate-card">
+                        <img src="assets/images/sertifikat3.png" alt="Dilesin Academy C++ programming course certificate" loading="lazy">
+                        <h3>C++ Programming Course - Dilesin Academy</h3>
+                        <p>Enhanced programming skills through intensiv C++ training, emphasizing logical thinking and real world problem solving.</p>
+                        <a href="assets/certificates/sertifikat_c++.pdf" target="_blank" rel="noopener noreferrer" class="btn">View Certificate <i class="bx bx-link-external button-icon" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="certificate-card">
+                        <img src="assets/images/sertifikat4.jpeg" alt="BNSP Network Analyst competency certificate" loading="lazy">
+                        <h3>Network Analys Competency Certification - BNSP</h3>
+                        <p>Certified as a Network Analyst by BNSP, demonstrating competence in network analysis, configuration, and troubleshooting based on national standards.</p>
+                        <a href="assets/certificates/sertifikat_bnsp.pdf" target="_blank" rel="noopener noreferrer" class="btn">View Certificate <i class="bx bx-link-external button-icon" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="certificate-card">
+                        <img src="assets/images/sertifikat5.jpeg" alt="Racer Robotic Indonesia IoT and robotics internship certificate" loading="lazy">
+                        <h3>IoT & Robotics Instructor Intern - PT. Racer Robotic Indonesia</h3>
+                        <p>Guided students in learning IoT, Arduino, and basic robotics through interactive and practical sessions during the internship program.</p>
+                        <a href="assets/certificates/racer_robotic.pdf" target="_blank" rel="noopener noreferrer" class="btn">View Certificate <i class="bx bx-link-external button-icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="certificate-card">
-                <img src="assets/img/sertifikat2.png" alt="" loading="lazy">
-
-                <h3>AI & Digital Literacy Webinar - Kominfo x Microsoft</h3>
-                <p>Participated in a digital literacy webinar discussing the impact of AI on digital talent, organized by Kominfo in collaboration with Microsoft.</p>
-                <a href="assets/sertifikat/sertifikat_kominfo.pdf" target="_blank" class="btn">View Certificate <i class="bx bx-link-external button-icon"></i></a>
-            </div>
-
-            <div class="certificate-card">
-                <img src="assets/img/sertifikat3.png" alt="" loading="lazy">
-
-                <h3>C++ Programming Course - Dilesin Academy</h3>
-                <p>Enhanced programming skills through intensiv C++ training, emphasizing logical thinking and real world problem solving.</p>
-                <a href="assets/sertifikat/sertifikat_c++.pdf" target="_blank" class="btn">View Certificate <i class="bx bx-link-external button-icon"></i></a>
-            </div>
-
-            <div class="certificate-card">
-                <img src="assets/img/sertifikat4.jpeg" alt="" loading="lazy">
-
-                <h3>Network Analys Competency Certification - BNSP</h3>
-                <p>Certified as a Network Analyst by BNSP, demonstrating competence in network analysis, configuration, and troubleshooting based on national standards.</p>
-                <a href="assets/sertifikat/sertifikat_bnsp.pdf" target="_blank" class="btn">View Certificate <i class="bx bx-link-external button-icon"></i></a>
-            </div>
-
-            <div class="certificate-card">
-                <img src="assets/img/sertifikat5.jpeg" alt="" loading="lazy">
-
-                <h3>IoT & Robotics Instructor Intern - PT. Racer Robotic Indonesia</h3>
-                <p>Guided students in learning IoT, Arduino, and basic robotics through interactive and practical sessions during the internship program.</p>
-                <a href="assets/sertifikat/racer_robotic.pdf" target="_blank" class="btn">View Certificate <i class="bx bx-link-external button-icon"></i></a>
-            </div>
-
-            <!--<div class="certificate-card">
-                <img src=".png" alt="" loading="lazy">
-
-                <h3>certificate 6</h3>
-                <p>On Going...</p>
-                <a href="#certificate" class="btn">View Certificate <i class="bx bx-link-external button-icon"></i></a>
-            </div>-->
-
-
+            <button class="certificate-nav certificate-nav--next" type="button" aria-label="Next certificates">
+                <i class="bx bx-chevron-right" aria-hidden="true"></i>
+            </button>
         </div>
     </section>
 <!--END SERTIF-->
 
-<!--CONTACT-->
-   <!-- <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="#">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                </div>
-
-                <div class="input-box"></div>
-                    <input type="number" placeholder="Phone Number">
-                    <input type="email" placeholder="Subject">
-
-            </div>
-
-            <div class="input-group2">
-                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-
-        </form>
-    </section>-->
-
-    <!--END CONTACT-->
+    </main>
 
     <footer class="footer">
-        <div class="social-icons">
-                <a href="https://github.com/yannlloyds">
-                    <i class="bx bxl-github"></i>
+        <div class="social-icons" aria-label="Social profiles">
+            <a href="https://github.com/yannlloyds" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-github" aria-hidden="true"></i>
                 </a>
 
-                 <a href="https://www.linkedin.com/in/dhasyadrianm">
-                    <i class="bx bxl-linkedin-square"></i>
+             <a href="https://www.linkedin.com/in/dhasyadrianm" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-linkedin-square" aria-hidden="true"></i>
                 </a>
 
-                 <a href="https://www.instagram.com/dhasyadrian?igsh=bjgwb2NmNDVqdXdo">
-                    <i class="bx bxl-instagram-alt"></i>
+             <a href="https://www.instagram.com/dhasyadrian?igsh=bjgwb2NmNDVqdXdo" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-instagram-alt" aria-hidden="true"></i>
                 </a>
 
-                 <a href="https://x.com/Adrian_420m">
-                    <i class="bx bxl-twitter"></i>
+             <a href="https://x.com/Adrian_420m" aria-label="X" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-twitter" aria-hidden="true"></i>
                 </a>
             </div>
 
             <ul class="list">
-                <li>
-                    <a href="#"><i class="bx bx-message-rounded-detail footer-icon"></i> FAQ</a>
-                </li>
-                <!--d a m-->
-                <!--<li>
-                    <a href="#Services">Services</a>
-                </li>-->
-
                 <li>
                     <a href="#about"><i class="bx bx-user footer-icon"></i> About Me</a>
                 </li>
@@ -304,17 +230,21 @@
                 </li>
 
                 <li>
-                    <a href="mailto: dhasyadrianm@gmail.com"><i class="bx bx-envelope footer-icon"></i> Contact</a>
+                    <a href="mailto:dhasyadrianm@gmail.com"><i class="bx bx-envelope footer-icon"></i> Contact</a>
                 </li>
             </ul>
 
             <p class="copyright">
-                @ Dhasya Adrian Maulana | All Right Reserved
+                &copy; <span id="current-year">2026</span> Dhasya Adrian Maulana. <span>All rights reserved.</span>
             </p>
 
     </footer>
+
+    <a class="back-to-top" href="#home" aria-label="Back to top">
+        <i class="bx bx-up-arrow-alt" aria-hidden="true"></i>
+    </a>
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>
