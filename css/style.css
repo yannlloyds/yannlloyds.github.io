@@ -885,6 +885,39 @@ section {
         --header-height: 7rem;
     }
 
+    .certificate-marquee::before,
+    .certificate-marquee::after,
+    .project-marquee::before,
+    .project-marquee::after {
+        width: clamp(2rem, 4vw, 3.2rem);
+        backdrop-filter: blur(2px);
+    }
+
+    .certificate-marquee,
+    .project-marquee {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 1.2rem;
+    }
+
+    .certificate-track,
+    .project-track {
+        order: 1;
+        flex: 0 0 100%;
+    }
+
+    .certificate-nav,
+    .project-nav {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        order: 2;
+        margin-top: 1rem;
+        transform: none;
+    }
+
     .header {
         padding-inline: 5%;
     }
